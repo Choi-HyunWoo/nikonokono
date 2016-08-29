@@ -36,8 +36,9 @@
       position: new naver.maps.LatLng(lat, lng),
       map : map,
       icon: {
-        url: 'http://static.naver.net/maps/v3/pin_default.png',
-        size: new naver.maps.Size(22, 35),
+        url: 'https://s3.ap-northeast-2.amazonaws.com/appjamping/file/mymy.png?X-Amz-Date=20160829T163811Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=1f3d77928419f289b66b8417b2b24850a97fa9af9d8d7100058670eeeaa564d9&X-Amz-Credential=ASIAI2WLEQPWIQNHNTEQ/20160829/ap-northeast-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEBYaDFYuHrICj9OAXlJjISLHASZY3qe8JZnqzE0AIG9F09kiNrF/tD6aNzM28pBjTtrN5AgQQgxi/rSdXkaJ1e6n4%2BcQ2um%2B/yEPj4vEGWnxJHawNJvjrZE/qIfwyi7u9xOvgthjZa5E9yc0whF7OLjUp5Yv7%2BRDuHD7Ih/DEc5Y0QwN2KjrQDmJpF8UqORSzyP2DRVcdSbHYG1bZq0apNT/mGvpPaUaYrDruxNtrX8XKF75uFn6FSNhF1pTks%2BktBNQz1goXHyz4sYMkzTddVGW4%2BZkd2hvUM4oheWQvgU%3D',
+        size: new naver.maps.Size(40, 36),
+        scaledSize: new naver.maps.Size(40, 35), // 레티나 대응
         anchor: new naver.maps.Point(11, 35)
       }
     };
@@ -51,8 +52,9 @@
         position: pos,
         map : map,
         icon: {
-          url: 'http://static.naver.net/maps/v3/pin_default.png',
-          size: new naver.maps.Size(22, 35),
+          url: 'https://s3.ap-northeast-2.amazonaws.com/appjamping/file/microphone.png?X-Amz-Date=20160829T163520Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=d1cc4e7988a5647634aff89c45de07f5dafab1f3081e3f01e6d7ef4224ffff84&X-Amz-Credential=ASIAI2WLEQPWIQNHNTEQ/20160829/ap-northeast-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=FQoDYXdzEBYaDFYuHrICj9OAXlJjISLHASZY3qe8JZnqzE0AIG9F09kiNrF/tD6aNzM28pBjTtrN5AgQQgxi/rSdXkaJ1e6n4%2BcQ2um%2B/yEPj4vEGWnxJHawNJvjrZE/qIfwyi7u9xOvgthjZa5E9yc0whF7OLjUp5Yv7%2BRDuHD7Ih/DEc5Y0QwN2KjrQDmJpF8UqORSzyP2DRVcdSbHYG1bZq0apNT/mGvpPaUaYrDruxNtrX8XKF75uFn6FSNhF1pTks%2BktBNQz1goXHyz4sYMkzTddVGW4%2BZkd2hvUM4oheWQvgU%3D',
+          size: new naver.maps.Size(40, 35),
+          scaledSize: new naver.maps.Size(40, 35), // 레티나 대응
           anchor: new naver.maps.Point(11, 35)
         }
       };
