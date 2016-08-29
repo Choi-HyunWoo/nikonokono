@@ -241,15 +241,15 @@
         success: function() {
           var i = 0;
 
-          "<% Recommend.all.each do |r| %>"
-            "<% if r.post_id == @post.id %>"
-              "<% if r.email == current_user.email %>"
-                i = 1
+          "<% if current_user %> "
+            "<% Recommend.all.each do |r| %>"
+              "<% if r.post_id == @post.id %>"
+                "<% if r.email == current_user.email %>"
+                  i = 1
+                "<% end %>"
               "<% end %>"
             "<% end %>"
-          "<% end %>"
 
-          "<% if current_user %> "
             "<% if current_user.email == @post.user.email %>"
               alert("자신의 글은 추천 불가합니다.");
             "<% else %>"
@@ -267,7 +267,7 @@
         },
         error: function(err) {
           alert("추천을 하시려면 로그인하세요.");
-          window.location.href = "users/sign_in";
+          window.location.href = "/users/sign_in";
         }
       });
     });
